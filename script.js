@@ -20,3 +20,7 @@ function qrCode(event){
 
 button.addEventListener("click" , qrCode)
 
+inputText.addEventListener("keypress", function(event){
+    if(event.key ==="Enter")
+    qrCode();
+})
